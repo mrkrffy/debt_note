@@ -1,0 +1,75 @@
+name: debt_note
+description: An app that handles debts and loans.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+dependencies: 
+  # Flutter SDK
+  flutter:
+    sdk: flutter
+
+  # Routing  
+  auto_route: ^7.8.4
+
+  # State Management
+  flutter_riverpod: ^2.4.4
+  riverpod_annotation: ^2.2.1
+  hooks_riverpod: ^2.4.4
+  flutter_hooks: ^0.20.3
+
+  # Localization
+  intl: ^0.18.1
+  flutter_localizations:
+    sdk: flutter
+
+  # Data-class Annotation
+  dart_mappable: ^4.0.1
+
+  # Database
+  firebase_core: ^2.19.0
+  cloud_firestore: ^4.11.0
+
+  # Authentication
+  firebase_auth: ^4.11.1
+
+dev_dependencies:
+  # Flutter Test SDK
+  flutter_test:
+    sdk: flutter
+
+  # Linter
+  flutter_lints: ^3.0.0
+
+  # Core Code Generator
+  build_runner: ^2.4.6
+
+  # Data-class Generator
+  dart_mappable_builder: ^4.0.1
+
+  # Asset Generator
+  flutter_gen_runner: ^5.3.2
+
+  # Route Generator
+  auto_route_generator: ^7.3.2
+
+  # State Management (Riverpod) Generator
+  custom_lint: ^0.5.4
+  riverpod_generator: ^2.3.5
+  riverpod_lint: ^2.3.2
+
+flutter:
+  uses-material-design: true
+
+flutter_gen:
+  output: lib/application/generated/
+  integrations:
+    flutter_svg: true
+
+flutter_intl:
+  enabled: true
+  class_name: I18n
+  arb_dir: lib/application/l10n
+  output_dir: lib/application/generated

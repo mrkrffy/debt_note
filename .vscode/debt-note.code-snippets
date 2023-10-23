@@ -1,0 +1,54 @@
+{
+    "GoRouter Route": {
+        "prefix": "goRoute",
+        "body": [
+            "@immutable",
+            "class $0Route extends GoRouteData {"
+            "   @override",
+            "   Widget build(BuildContext context, GoRouterState state) => $0();"
+            "}"
+        ]
+    },
+    "GoRouter Route With Args": {
+        "prefix": "goRouteArgs",
+        "body": [
+            "@immutable",
+            "class $0Route extends GoRouteData {",
+            "   const $0Route({",
+            "   });",
+            "",
+            " $1",
+            "",
+            "   @override",
+            "   Widget build(BuildContext context, GoRouterState state) => $0();"
+            "}"
+        ]
+    },
+    "Dart Mappable Class": {
+        "prefix": "mappableClass",
+        "body": [
+            "import 'package:dart_mappable/dart_mappable.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.mapper.dart';",
+            "",
+            "@MappableClass()",
+            "class $0 with $0Mappable {",
+            "   const $0();",
+            "",
+            "}"
+        ]
+    },
+    "Dart Mappable Enum": {
+        "prefix": "mappableEnum",
+        "body": [
+            "import 'package:dart_mappable/dart_mappable.dart';",
+            "",
+            "part '${TM_FILENAME_BASE}.mapper.dart';",
+            "",
+            "@MappableEnum()",
+            "enum $0 {",
+            "",
+            "}"
+        ]
+    }
+}

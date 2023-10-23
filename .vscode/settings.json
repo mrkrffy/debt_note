@@ -1,0 +1,17 @@
+{
+    "dart.updateImportsOnRename": true,
+    "dart.lineLength": 120,
+    "files.exclude": {
+       "**/*.g.dart": true,
+       "**/*.gr.dart": true,
+       "**/*.freezed.dart": true,
+       "**/*.config.dart": true,
+    },
+    "[dart]": {
+       "editor.formatOnSave": true,
+       "editor.rulers": [120]
+    },
+    "editor.codeActionsOnSave": {
+       "source.fixAll": true,
+    },
+ }
